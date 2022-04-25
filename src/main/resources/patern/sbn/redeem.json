@@ -1,0 +1,10 @@
+{
+  "kode_pemesanan": {
+    "type": "string",
+    "status": "mandatory"
+  },
+  "nominal": {
+    "type": "biginteger",
+    "status": "mandatory"
+  }
+}

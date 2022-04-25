@@ -1,0 +1,49 @@
+package com.nsi.domain.core;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.SequenceGenerator;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="channel_commission")
+public class ChannelCommission extends BaseNewDomain {
+
+	private Long id;
+	private Channel channel;
+	private Integer commission;
+	
+	@Id
+	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "channel_commission_generator")
+	@SequenceGenerator(name="channel_commission_generator", sequenceName = "channel_commission_id_seq", allocationSize=1)
+	public Long getId() {
+		return id;
+	}
+	public void setId(Long id) {
+		this.id = id;
+	}
+	
+	@ManyToOne
+	@JoinColumn(name="channel_id")
+	public Channel getChannel() {
+		return channel;
+	}
+	public void setChannel(Channel channel) {
+		this.channel = channel;
+	}
+	
+	@Column(name="commission")
+	public Integer getCommission() {
+		return commission;
+	}
+	public void setCommission(Integer commission) {
+		this.commission = commission;
+	}
+	
+	
+}

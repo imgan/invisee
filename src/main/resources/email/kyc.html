@@ -1,0 +1,444 @@
+<html>
+    <header>
+        <style>
+            .wrapper{
+            width:100%;
+            }
+            .beautifulTable {
+            margin:0px;padding:0px;
+            border-collapse: collapse; 
+            }.beautifulTable table{
+            width:100%;
+            height:100%;
+            margin:0px;padding:0px;
+            }
+            .beautifulTable tr:nth-child(odd){ background-color:#EDF1F2; }
+            .beautifulTable tr:nth-child(even) { background-color:#E4EBED; }
+            .beautifulTable td{
+            vertical-align:middle;
+            border-width:0px 0px 0px 0px;
+            text-align:left;
+            padding:1px;
+            font-size:13px;
+            color:#000000;
+            }
+            .beautifulTableWithHeader {
+            margin:0px;padding:0px;
+            border-collapse: collapse; 
+            }.beautifulTableWithHeader table{
+            width:100%;
+            height:100%;
+            margin:0px;padding:0px;
+            }
+            .beautifulTableWithHeader tr:nth-child(odd){ background-color:#EDF1F2; }
+            .beautifulTableWithHeader tr:nth-child(even) { background-color:#E4EBED; }
+            .beautifulTableWithHeader td{
+            vertical-align:middle;
+            border-width:0px 0px 0px 0px;
+            text-align:left;
+            padding:1px;
+            font-size:13px;
+            color:#000000;
+            }
+            .beautifulTableWithHeader tr:first-child td{
+            background-color:#cccccc;
+            text-align:center;
+            border-width:0px 0px 0px 0px;
+            font-size:13px;
+            color:#000000;
+            }
+            .beautifulTableWithHeader tr:first-child td:first-child{
+            border-width:0px 0px 0px 0px;
+            }
+            .tr_rand_1{
+            padding: 1px;
+            }
+        </style>
+    </header>
+    <body>
+        <table class="wrapper" style="height: 480px;">
+            <tr height="130px;">
+                <td width="100%">
+                    <table width="100%">
+                        <tr>
+                            <td width="1%"></td>
+                            <td width="98%">
+                                <table width="100%">
+                                    <tr>
+                                        <td width="25%">
+                                    <center>
+                                    <!--    <img src="$!{logo}" width="210px" height="auto"/> -->
+                                    </center>
+                            </td>
+                            <td width="50%" style="font-size:13px;">
+                        <center>
+                            <h2><b>OPENING ACCOUNT FORM</b></h2>
+                            <div><i>This form will only need to be completed once</i></div>
+                        </center>
+                </td>
+                <td width="25%">
+                    <table class="beautifulTable" width="100%">
+                        <tr>
+                            <td><center>Document No</center></td>
+            </tr>
+            <tr>
+                <td><center>$!{data.kyc.portalcif}</center></td>
+            </tr>
+        </table>
+    </td>
+</tr>
+</table>
+</td>
+<td width="1%"></td>
+</tr>
+<tr>
+    <td colspan="3" width="100%"><hr /></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+    <td width="100%" style="vertical-align: top;">
+        <table width="100%">
+            <tr>
+                <td colspan="3" width="100%">
+                    <div style="margin:1px 5px; width:98%; background-color:#CCCCCC; border:2px solid #7A7A7A; line-height: normal; font-size:13px; padding: 1px">
+                        <strong>
+                            &nbsp;I. Client Information
+                        </strong>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3" width="100%">
+                    <div style="margin:1px 5px; width:98%; background-color:#E8E8E8; line-height: normal; font-size:13px; padding: 1px">
+                        <span>&nbsp;Name : $!{data.kyc.firstName} $!{data.kyc.middleName} $!{data.kyc.lastName}</span>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3" width="100%">
+                    <table width="100%" style="margin:1px 5px; width:98%;" class="tr_rand_1">
+                        <tr>
+                            <td width="50%" style="vertical-align: top;">
+                                <table width="100%" class="beautifulTable" style="margin-left:-2px;">
+                                    <tr>
+                                        <td>E-mail</td>
+                                        <td>:</td>
+                                        <td>$!{data.kyc.email}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Phone </td>
+                                        <td>:</td>
+                                        <td>$!{data.kyc.homePhoneNumber}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mobil Phone</td>
+                                        <td>:</td>
+                                        <td>$!{data.kyc.mobileNumber}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Birth Place</td>
+                                        <td>:</td>
+                                        <td>$!{data.kyc.birthPlace}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Birth Date</td>
+                                        <td>:</td>
+                                        <td>$!dateTool.format('dd-MM-yyyy',${data.kyc.birthDate})</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Referral</td>
+                                        <td>:</td>
+                                        <td>$!{data.referral}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Referral Name</td>
+                                        <td>:</td>
+                                        <td>$!{data.kyc.referralName}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Gender</td>
+                                        <td>:</td>
+                                        <td>$!{data.gender}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Citizenship</td>
+                                        <td>:</td>
+                                        <td>$!{data.citizenship}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Nationality</td>
+                                        <td>:</td>
+                                        <td>$!{data.nationality}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Marital Status</td>
+                                        <td>:</td>
+                                        <td>$!{data.maritalStatus}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Spouse Name</td>
+                                        <td>:</td>
+                                        <td>$!{data.kyc.spouseName}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mother's Maiden Name</td>
+                                        <td>:</td>
+                                        <td>$!{data.kyc.motherMaidenName}</td>
+                                    </tr>	
+                                    <tr>
+                                        <td>Religion</td>
+                                        <td>:</td>
+                                        <td>$!{data.religion}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>ID Type</td>
+                                        <td>:</td>
+                                        <td>$!{data.idType}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>ID Number</td>
+                                        <td>:</td>
+                                        <td>$!{data.kyc.idNumber}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>ID Expiration Date </td>
+                                        <td>:</td>
+                                        <td>$!dateTool.format('dd-MM-yyyy',${data.kyc.idExpirationDate})</td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <td></td>
+                            <td width="50%" style="vertical-align: top;">
+                                <table width="100%" class="beautifulTable" style="float:top;">
+                                    <tr>
+                                        <td>Tax ID</td>
+                                        <td>:</td>
+                                        <td>$!{data.kyc.taxId}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Tax ID Registration Date</td>
+                                        <td>:</td>
+                                        <td>$!dateTool.format('dd-MM-yyyy',${data.kyc.taxIdRegisDate})</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Occupation</td>
+                                        <td>:</td>
+                                        <td>$!{data.occupation}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Employer Name</td>
+                                        <td>:</td>
+                                        <td>$!{data.kyc.employerName}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Nature of Business</td>
+                                        <td>:</td>
+                                        <td>$!{data.natureOfBusiness}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Education Background</td>
+                                        <td>:</td>
+                                        <td>$!{data.educationBackground}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Investment Purpose</td>
+                                        <td>:</td>
+                                        <td>$!{data.investmentPurpose}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Source of Income</td>
+                                        <td>:</td>
+                                        <td>$!{data.sourceOfIncome}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Total Income p.a.</td>
+                                        <td>:</td>
+                                        <td>$!{data.totalIncomePa}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Total Asset</td>
+                                        <td>:</td>
+                                        <td>$!{totalAsset}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Investment Experience</td>
+                                        <td>:</td>
+                                        <td>$!{data.investmentExperience}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Other Investment Experience</td>
+                                        <td>:</td>
+                                        <td>$!{data.kyc.otherInvestmentExperience}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Beneficiary (Heir) Name</td>
+                                        <td>:</td>
+                                        <td>$!{data.kyc.beneficiaryName}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Relationship with Beneficiary</td>
+                                        <td>:</td>
+                                        <td>$!{data.beneficiaryRelationship}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Preferred Mailing Address</td>
+                                        <td>:</td>
+                                        <td>$!{data.preferredMailingAddress}</td>
+                                    </tr>	
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3" width="100%">
+                    <table width="100%" class="beautifulTableWithHeader tr_rand_1" style="margin:1px 5px; width:98%;">
+                        <tr>
+                            <td colspan="4" style="text-align:left;">Politically Exposed Person (PEP) Declaration</td>
+                        </tr>
+                        <tr>
+                            <td width="25%">Name</td>
+                            <td width="25%">: $!{data.kyc.pepName}</td>
+                            <td width="25%">Year Of Service</td>
+                            <td width="25%">: $!{data.kyc.pepYearOfService}</td>
+                        </tr>
+                        <tr>
+                            <td width="25%">Position/Duties</td>
+                            <td width="25%">: $!{data.kyc.pepPosition}</td>
+                            <td width="25%">Relationship</td>
+                            <td width="25%">: $!{pepRelationship}</td>
+                        </tr>
+                        <tr>
+                            <td width="25%">Public Function</td>
+                            <td width="25%">: $!{data.kyc.pepPublicFunction}</td>
+                            <td width="25%">Other Relationship</td>
+                            <td width="25%">: $!{data.kyc.pepOther}</td>
+                        </tr>
+                        <tr>
+                            <td width="25%">Country</td>
+                            <td width="25%">: &nbsp;</td>
+                            <td width="25%">&nbsp;</td>
+                            <td width="25%">&nbsp;</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3" width="100%">
+                    <table  class="beautifulTableWithHeader tr_rand_1" width="100%" style="margin:1px 5px; width:98%;">
+                        <tr>
+                            <td colspan="4" style="text-align:left;">Home Address</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align:left;">Address</td>
+                            <td colspan="3">: $!{data.kyc.homeAddress}</td>
+                        </tr>
+                        <tr>
+                            <td width="25%">City</td>
+                            <td width="25%">: $!{data.homeCity}</td>
+                            <td width="25%">Postal Code</td>
+                            <td width="25%">: $!{data.kyc.homePostalCode}</td>
+                        </tr>
+                        <tr>
+                            <td width="25%">Province</td>
+                            <td width="25%">: $!{data.homeProvince}</td>
+                            <td width="25%">Phone</td>
+                            <td width="25%">: $!{data.kyc.homePhoneNumber}</td>
+                        </tr>
+                        <tr>
+                            <td width="25%">Country</td>
+                            <td width="25%">: $!{data.homeCountry}</td>
+                            <td width="25%">Fax</td>
+                            <td width="25%">: $!{data.kyc.homeFaxNumber}</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3" width="100%">
+                    <table  class="beautifulTableWithHeader tr_rand_1" width="100%" style="margin:1px 5px; width:98%;">
+                        <tr>
+                            <td colspan="4" style="text-align:left;">Legal Address</td>
+                        </tr>                        
+                        <tr>
+                            <td style="text-align:left;">Address</td>
+                            <td colspan="3" >: $!{data.kyc.legalAddress}</td>
+                        </tr>
+                        <tr>
+                            <td width="25%">City</td>
+                            <td width="25%">: $!{data.legalCity}</td>
+                            <td width="25%">Postal Code</td>
+                            <td width="25%">: $!{data.kyc.legalPostalCode}</td>
+                        </tr>
+                        <tr>
+                            <td width="25%">Province</td>
+                            <td width="25%">: $!{data.legalProvince}</td>
+                            <td width="25%">Phone</td>
+                            <td width="25%">: $!{data.kyc.legalPhoneNumber}</td>
+                        </tr>
+                        <tr>
+                            <td width="25%">Country</td>
+                            <td width="25%">: $!{data.legalCountry}</td>
+                            <td width="25%">Fax</td>
+                            <td width="25%">: $!{data.kyc.legalFaxNumber}</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3" width="100%">
+                    <table  class="beautifulTableWithHeader tr_rand_1" width="100%" style="margin:1px 5px; width:98%;">
+                        <tr>
+                            <td colspan="5" style="text-align:left;">Settlement Account</td>
+                        </tr>
+                        <tr>
+                            <td width="20%">Bank</td>
+                            <td width="80%">: $!{data.settlementAccounts.bankId.bankName}</td>
+                        </tr>
+                        <tr>
+                            <td width="20%">Name</td>
+                            <td width="80%">: $!{data.settlementAccounts.settlementAccountName}</td>
+                        </tr>
+                        <tr>
+                            <td width="20%">Account Number</td>
+                            <td width="80%">: $!{data.settlementAccounts.settlementAccountNo}</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </td>
+</tr>
+<tr>
+    <td width="100%" style="vertical-align: top; padding-top: 80px; padding-left: 10px; padding-right: 10px">
+        <table width="100%">
+            <tr>
+                <td colspan="3" width="100%"><hr /></td>
+            </tr>
+            <tr>
+                <td colspan="3" width="100%"> 
+                    <table width="100%">
+                        <tr>
+                            <td width="50%" style="text-align:left">			
+                                <span>
+                                    $!dateTool.format('dd-MM-yyyy',${date})
+                                </span>
+                            </td>
+                            <td width="50%" style="text-align:right">
+                                <span>
+                                    Page 1 of 3
+                                </span>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </td>
+</tr>
+</table>
+</body>
+</html>

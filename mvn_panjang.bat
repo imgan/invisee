@@ -1,0 +1,1 @@
+mvn org.apache.maven.plugins:maven-eclipse-plugin:2.9:eclipse -Dwtpversion=2.0 -DdownloadSources=true -DdownloadJavadocs=true

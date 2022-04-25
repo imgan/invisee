@@ -1,0 +1,82 @@
+{
+  "signature": {
+    "type": "string",
+    "status": "mandatory"
+  },
+  "agent": {
+    "type": "string",
+    "status": "mandatory"
+  },
+  "phone_number": {
+    "type": "phone",
+    "status": "mandatory"
+  },
+  "email": {
+    "type": "email",
+    "status": "mandatory"
+  },
+  "type_otp": {
+    "type": "string",
+    "status": "mandatory",
+    "value": ["sms","email"]
+  },
+  "otp": {
+    "type": "string",
+    "status": "mandatory"
+  },
+  "stan": {
+    "type": "string",
+    "status": "mandatory"
+  },
+  "jsessionId": {
+    "type": "string",
+    "status": "mandatory"
+  },
+  "memberId": {
+    "type": "string",
+    "status": "mandatory"
+  },
+  "kyc.photo.id_card.content": {
+    "type": "base64",
+    "status": "mandatory"
+  },
+  "kyc.photo.id_card.extention": {
+    "type": "string",
+    "status": "mandatory",
+    "value": ["jpg","png","jpeg"]
+  },
+  "kyc.photo.selfie.content": {
+    "type": "base64",
+    "status": "mandatory"
+  },
+  "kyc.photo.selfie.extention": {
+    "type": "string",
+    "status": "mandatory",
+    "value": ["jpg","png","jpeg"]
+  },
+  "order.channel_order": {
+    "type": "string",
+    "status": "mandatory"
+  },
+  "order.package_code": {
+    "type": "string",
+    "status": "mandatory"
+  },
+  "order.net_amount": {
+    "type": "double",
+    "status": "mandatory"
+  },
+  "order.fee_amount": {
+    "type": "double",
+    "status": "mandatory"
+  },
+  "order.total_amount": {
+    "type": "double",
+    "status": "mandatory"
+  },
+  "order.price_date": {
+    "type": "timestamp",
+    "status": "mandatory",
+    "patern": "yyyy-mm-dd"
+  }
+}

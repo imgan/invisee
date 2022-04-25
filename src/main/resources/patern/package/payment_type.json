@@ -1,0 +1,14 @@
+{
+    "agent": {
+        "type": "string",
+        "status": "mandatory"
+    },
+    "code": {
+        "type": "string",
+        "status": "mandatory"
+    },
+    "signature": {
+        "type": "string",
+        "status": "mandatory"
+    }
+}

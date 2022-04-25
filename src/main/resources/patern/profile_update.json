@@ -1,0 +1,166 @@
+{
+    "token": {
+        "type": "string",
+        "status": "mandatory"
+    },
+    "first_name": {
+        "type": "regex",
+        "patern": "^[a-zA-Z ]*$",
+        "status": "optional"
+    },
+    "last_name": {
+        "type": "regex",
+        "patern": "^[a-zA-Z ]*$",
+        "status": "optional"
+    },
+    "phone_number": {
+        "type": "phone",
+        "status": "optional"
+    },
+    "email": {
+        "type": "email",
+        "status": "optional"
+    },
+    "kyc.birth_date": {
+        "type": "timestamp",
+        "status": "optional",
+        "patern": "yyyy-mm-dd"
+    },
+    "kyc.birth_place": {
+        "type": "string",
+        "status": "optional"
+    },
+    "kyc.gender": {
+        "type": "string",
+        "status": "optional"
+    },
+    "kyc.nationality": {
+        "type": "string",
+        "status": "optional"
+    },
+    "kyc.marital_status": {
+        "type": "string",
+        "status": "optional"
+    },
+    "kyc.mother_maiden_name": {
+        "type": "string",
+        "status": "optional"
+    },
+    "kyc.education_background": {
+        "type": "string",
+        "status": "optional"
+    },
+    "kyc.religion": {
+        "type": "string",
+        "status": "optional"
+    },
+    "kyc.statement_type": {
+        "type": "string",
+        "status": "optional"
+    },
+    "kyc.occupation": {
+        "type": "string",
+        "status": "optional"
+    },
+    "kyc.business_nature": {
+        "type": "string",
+        "status": "optional"
+    },
+    "kyc.id_number": {
+        "type": "string",
+        "status": "optional"
+    },
+    "kyc.id_expiration": {
+        "type": "timestamp",
+        "status": "optional",
+        "patern": "yyyy-mm-dd"
+    },
+    "kyc.legal.country": {
+        "type": "string",
+        "status": "optional"
+    },
+    "kyc.legal.province": {
+        "type": "string",
+        "status": "optional"
+    },
+    "kyc.legal.city": {
+        "type": "string",
+        "status": "optional"
+    },
+    "kyc.legal.postal_code": {
+        "type": "string",
+        "status": "optional"
+    },
+    "kyc.legal.address": {
+        "type": "string",
+        "status": "optional"
+    },
+    "kyc.legal.phone": {
+        "type": "fixline",
+        "status": "optional"
+    },
+    "kyc.mailing.country": {
+        "type": "string",
+        "status": "optional"
+    },
+    "kyc.mailing.province": {
+        "type": "string",
+        "status": "optional"
+    },
+    "kyc.mailing.city": {
+        "type": "string",
+        "status": "optional"
+    },
+    "kyc.mailing.postal_code": {
+        "type": "string",
+        "status": "optional"
+    },
+    "kyc.mailing.address": {
+        "type": "string",
+        "status": "optional"
+    },
+    "kyc.mailing.phone": {
+        "type": "fixline",
+        "status": "optional"
+    },
+    "kyc.income_source": {
+        "type": "string",
+        "status": "optional"
+    },
+    "kyc.annual_income": {
+        "type": "string",
+        "status": "optional"
+    },
+    "kyc.total_asset": {
+        "type": "string",
+        "status": "optional"
+    },
+    "kyc.investment_purpose": {
+        "type": "string",
+        "status": "optional"
+    },
+    "kyc.investment_experience": {
+        "type": "string",
+        "status": "optional"
+    },
+    "kyc.other_investment_experience": {
+        "type": "string",
+        "status": "conditional",
+        "depend-on": {
+            "key": "kyc.investment_experience",
+            "value": ["IE04"]
+        }
+    },
+    "kyc.settlement_bank": {
+        "type": "string",
+        "status": "optional"
+    },
+    "kyc.settlement_account_name": {
+        "type": "string",
+        "status": "optional"
+    },
+    "kyc.settlement_account_no": {
+        "type": "string",
+        "status": "optional"
+    }
+}

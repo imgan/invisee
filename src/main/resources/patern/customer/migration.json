@@ -1,0 +1,10 @@
+{
+  "offset": {
+    "type": "integer",
+    "status": "mandatory"
+  },
+  "limit": {
+    "type": "integer",
+    "status": "mandatory"
+  }
+}

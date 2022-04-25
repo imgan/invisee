@@ -1,0 +1,10 @@
+{
+  "sid": {
+    "type": "string",
+    "status": "mandatory"
+  },
+  "id_seri": {
+    "type": "long",
+    "status": "mandatory"
+  }
+}

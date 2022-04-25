@@ -1,0 +1,6 @@
+{
+  "kode_pemesanan": {
+    "type": "string",
+    "status": "mandatory"
+  }
+}

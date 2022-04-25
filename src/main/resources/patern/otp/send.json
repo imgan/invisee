@@ -1,0 +1,40 @@
+{
+    "agent": {
+        "type": "string",
+        "status": "mandatory"
+    },
+    "signature": {
+        "type": "string",
+        "status": "mandatory"
+    },
+    "first_name": {
+        "type": "regex",
+        "patern": "^[a-zA-Z ]*$",
+        "status": "conditional",
+        "depend-on": {
+            "key": "agent",
+            "value": ["BLANJA"]
+        }
+    },
+    "last_name": {
+        "type": "regex",
+        "patern": "^[a-zA-Z ]*$",
+        "status": "conditional",
+        "depend-on": {
+            "key": "agent",
+            "value": ["BLANJA"]
+        }
+    },
+    "email": {
+        "type": "email",
+        "status": "mandatory"
+    },
+    "phone_number": {
+        "type": "phone",
+        "status": "mandatory"
+    },
+    "type_otp": {
+        "type": "string",
+        "status": "mandatory"
+    }
+}

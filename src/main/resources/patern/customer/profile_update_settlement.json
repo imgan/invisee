@@ -1,0 +1,23 @@
+{
+    "token": {
+        "type": "string",
+        "status": "mandatory"
+    },
+    "kyc.email": {
+        "type": "email",
+        "status": "optional"
+    },
+    "kyc.settlement_bank": {
+        "type": "string",
+        "status": "optional"
+    },
+    "kyc.settlement_account_name": {
+        "type": "string",
+        "status": "optional"
+    },
+    "kyc.settlement_account_no": {
+        "type": "regex",
+        "patern": "^[0-9]*$",
+        "status": "optional"
+    }
+}

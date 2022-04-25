@@ -1,0 +1,10 @@
+{
+  "memberId": {
+    "type": "string",
+    "status": "mandatory"
+  },
+  "jsessionId": {
+    "type": "string",
+    "status": "mandatory"
+  }
+}

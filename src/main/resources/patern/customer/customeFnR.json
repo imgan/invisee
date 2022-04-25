@@ -1,0 +1,108 @@
+{
+  "fatca": [
+    {
+      "question": "Q1",
+      "answers": [
+        "Q1A2"
+      ]
+    },
+    {
+      "question": "Q2",
+      "answers": [
+        "Q2A2"
+      ]
+    },
+    {
+      "question": "Q3",
+      "answers": [
+        "Q3A2"
+      ]
+    },
+    {
+      "question": "Q4",
+      "answers": [
+        "Q4A2"
+      ]
+    },
+    {
+      "question": "Q5",
+      "answers": [
+        "Q5A2"
+      ]
+    },
+    {
+      "question": "Q6",
+      "answers": [
+        "Q6A2"
+      ]
+    },
+    {
+      "question": "Q7",
+      "answers": [
+        "Q7A2"
+      ]
+    },
+    {
+      "question": "Q8",
+      "answers": [
+        "Q8A2"
+      ]
+    },
+    {
+      "question": "Q9",
+      "answers": [
+        "Q9A2"
+      ]
+    },
+    {
+      "question": "Q10",
+      "answers": [
+        "Q10A2"
+      ]
+    },
+    {
+      "question": "Q11",
+      "answers": [
+        "Q11A2"
+      ]
+    }
+  ],
+  "risk_profile": [
+    {
+      "question": "Q1",
+      "answers": [
+        "Q1A1"
+      ]
+    },
+    {
+      "question": "Q2",
+      "answers": [
+        "Q2A1"
+      ]
+    },
+    {
+      "question": "Q3",
+      "answers": [
+        "Q3A1"
+      ]
+    },
+    {
+      "question": "Q4",
+      "answers": [
+        "Q4A1"
+      ]
+    },
+    {
+      "question": "Q5",
+      "answers": [
+        "Q5A1"
+      ]
+    },
+    {
+      "question": "Q6",
+      "answers": [
+        "Q6A1"
+      ]
+    }
+  ]
+}

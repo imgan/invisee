@@ -1,0 +1,6 @@
+{
+  "transactions_code": {
+    "type": "string",
+    "status": "mandatory"
+  }
+}

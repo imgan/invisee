@@ -1,0 +1,11 @@
+{
+  "token": {
+    "type": "string",
+    "status": "mandatory"
+  },
+  "activation_code": {
+    "type": "regex",
+    "status": "mandatory",
+    "patern": "^[A-Z0-9]*$"
+  }
+}

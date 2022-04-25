@@ -1,0 +1,14 @@
+{
+  "token": {
+    "type": "string",
+    "status": "mandatory"
+  },
+  "balance_date": {
+    "type": "string",
+    "status": "mandatory"
+  },
+  "inv_account_no": {
+    "type": "string",
+    "status": "mandatory"
+  }
+}

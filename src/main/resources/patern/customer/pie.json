@@ -1,0 +1,5 @@
+{       "token": {
+        "type": "string",
+        "status": "mandatory"
+    }
+}

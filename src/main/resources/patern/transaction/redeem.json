@@ -1,0 +1,10 @@
+{
+    "token": {
+        "type": "string",
+        "status": "mandatory"
+    },
+    "signature": {
+        "type": "string",
+        "status": "mandatory"
+    }
+}

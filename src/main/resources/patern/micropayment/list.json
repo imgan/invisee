@@ -1,0 +1,21 @@
+{
+    "token": {
+        "type": "string",
+        "status": "mandatory"
+    },
+    "type": {
+        "type": "string",
+        "status": "mandatory",
+        "value": ["viseepay"]
+    },
+    "from": {
+        "type": "timestamp",
+        "status": "optional",
+        "patern": "yyyy-mm-dd"
+    },
+    "to": {
+        "type": "timestamp",
+        "status": "optional",
+        "patern": "yyyy-mm-dd"
+    }
+}

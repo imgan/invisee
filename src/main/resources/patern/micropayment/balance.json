@@ -1,0 +1,11 @@
+{
+    "token": {
+        "type": "string",
+        "status": "mandatory"
+    },
+    "type": {
+        "type": "string",
+        "status": "mandatory",
+        "value": ["viseepay"]
+    }
+}

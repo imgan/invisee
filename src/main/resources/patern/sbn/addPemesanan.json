@@ -1,0 +1,10 @@
+{
+  "id_seri": {
+    "type": "biginteger",
+    "status": "mandatory"
+  },
+  "nominal": {
+    "type": "biginteger",
+    "status": "mandatory"
+  }
+}
